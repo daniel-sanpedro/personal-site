@@ -50,28 +50,25 @@
 
   <body>
     <div class="navbar">
-      <a href="comment.html" class="split">Comment</a>
       <a href="portfolio.html" class="split">Portfolio</a>
       <a href="about.html" class="split">About Me</a>
-      <a href="index.html" class="split">Index</a>
+      <a href="#index.html" class="split">Index</a>
       <a href="https://facebook.com" class="fa fa-facebook"></a>
       <a href="https://twitter.com" class="fa fa-twitter"></a>
       <a href="https://linkedin.com/" class="fa fa-linkedin"></a>
     </div>
-    <p>test</p>
-    <!-- include rolls you play -->
-    <p>Developer(in progres), Foodie(self proclaimed)</p>
-    <!--  small discription of rolls -->
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut reiciendis
-      eius eum molestias magni est laboriosam? Repellat quam, debitis nostrum,
-      eligendi enim consequatur animi perferendis officia molestiae, voluptatem
-      porro adipisci?
-    </p>
-    <!--  quote -->
-    <p>“You’re here for a good time, not a long time.”</p>
-    <p>— Colin McRae</p>
-    <!-- links to facebook/linkdin/twitter -->
-    <p></p>
+    <form action="index.php" method="POST">
+      <!-- name -->
+      <label for="name">name:</label>
+      <input type="text" id="name" name="name" placeholder="name" />
+      <!-- emale -->
+      <label for="email">email:</label>
+      <input type="text" id="email" name="email" placeholder="email" />
+      <!-- message -->
+      <label for="message">message:</label>
+      <input type="text" id="message" name="message" placeholder="message" />
+      <!-- submit -->
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
