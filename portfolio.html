@@ -37,6 +37,7 @@
         background: #ddd;
         color: black;
       }
+      /* navbar split */
       .navbar a.split {
         float: right;
         color: white;
@@ -46,39 +47,39 @@
         padding: 16px;
         margin-bottom: 30px;
       }
-
+      /* flexcontainer */
       .flex-container {
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #white;
       }
-
       .flex-container > div {
         background-color: DodgerBlue;
         color: white;
-        width: 200px;
+        width: 400px;
         margin: 10px;
         text-align: center;
         line-height: 200px;
         font-size: 30px;
       }
-      .dark-mode {
-        background-color: black;
-        color: white;
-      }
+      #theme-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #596AFF;
+}
+#theme-btn:hover {
+  color: #BB86FC;
+}
+.changeTheme {
+  background: #1D1E22;
+  color: #eee;
+}
     </style>
   </head>
 
   <body>
-    <!-- darkmode button -->
-    <button onclick="myFunction()">Toggle dark mode</button>
-    <script>
-      function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-      }
-    </script>
+    
     <!-- navbar -->
     <div class="navbar">
       <a href="contact-me.html" class="split">Contact Me</a>
@@ -92,12 +93,14 @@
     </div>
     <!-- Flexbox -->
     <div class="flex-container">
+      
       <!-- project 1 -->
-      <div>1</div>
+      <div href="images/Zoo.JPG">zoo</div>
       <!-- project 2 -->
-      <div>2</div>
+      <div>developer portfolio</div>
       <!-- project 3 -->
-      <div>3</div>
+      <div>vault</div>
+      
     </div>
     <p>tesasdadddt</p>
     <p>asdasd</p>
@@ -106,4 +109,5 @@
     <!-- second project -->
     <!-- third project -->
   </body>
+  <script src="javascript.js"></>
 </html>

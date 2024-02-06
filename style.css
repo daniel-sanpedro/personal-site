@@ -1,3 +1,4 @@
-#one, #two, #three { width: 33.3%; }
-#one, #two { float: left; }
-#three { float: right; clear: none; }
+.changeTheme {
+    background: #1D1E22;
+    color: #eee;
+  }
