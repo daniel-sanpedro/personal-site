@@ -45,6 +45,10 @@
         padding: 16px;
         margin-bottom: 30px;
       }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
     </style>
   </head>
 
@@ -58,9 +62,19 @@
       <a href="https://twitter.com" class="fa fa-twitter"></a>
       <a href="https://linkedin.com/" class="fa fa-linkedin"></a>
     </div>
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+
     <p>test</p>
     <!-- include rolls you play -->
-    <p>Developer(in progres), Foodie(self proclaimed)</p>
+    <h2>
+      <p>Developer(in progres), Foodie(self proclaimed)</p>
+    </h2>
     <!--  small discription of rolls -->
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut reiciendis
@@ -69,8 +83,12 @@
       porro adipisci?
     </p>
     <!--  quote -->
-    <p>“You’re here for a good time, not a long time.”</p>
-    <p>— Colin McRae</p>
+    <h3>
+      <p>“You’re here for a good time, not a long time.”</p>
+    </h3>
+    <h4>
+      <p>— Colin McRae</p>
+    </h4>
     <!-- links to facebook/linkdin/twitter -->
     <p></p>
   </body>

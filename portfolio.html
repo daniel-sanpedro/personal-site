@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -45,10 +46,48 @@
         padding: 16px;
         margin-bottom: 30px;
       }
+
+      .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #white;
+      }
+
+      .flex-container > div {
+        background-color: DodgerBlue;
+        color: white;
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+        line-height: 200px;
+        font-size: 30px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
     </style>
   </head>
 
   <body>
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+    <!-- Flexbox -->
+    <div class="flex-container">
+      <!-- project 1 -->
+      <div>1</div>
+      <!-- project 2 -->
+      <div>2</div>
+      <!-- project 3 -->
+      <div>3</div>
+    </div>
+
     <div class="navbar">
       <a href="contact-me.html" class="split">Contact Me</a>
       <a href="portfolio.html" class="split">Portfolio</a>

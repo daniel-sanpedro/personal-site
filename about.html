@@ -45,9 +45,20 @@
         padding: 16px;
         margin-bottom: 30px;
       }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
     </style>
   </head>
   <body>
+    <button onclick="myFunction()">Toggle dark mode</button>
+      <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+      </script>
     <div class="navbar">
       <a href="contact-me.html" class="split">Contact Me</a>
       <a href="portfolio.html" class="split">Portfolio</a>
@@ -60,7 +71,9 @@
     <!-- When I'm not helping teams be productive while maintaing a healthy work-life balance, I'm doing the following things. -->
 
     <!-- video game -->
-    <p>video games</p>
+    <h2>
+      <p>video games</p>
+    </h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut
       magnam, dicta illum veniam eveniet expedita doloribus deserunt
@@ -68,7 +81,9 @@
       reprehenderit excepturi nisi distinctio.
     </p>
     <!-- working out -->
-    <p>working out</p>
+    <h2>
+      <p>working out</p>
+    </h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut
       magnam, dicta illum veniam eveniet expedita doloribus deserunt
@@ -77,7 +92,9 @@
     </p>
 
     <!-- overlanding -->
-    <p>overlanding</p>
+    <h2>
+      <p>overlanding</p>
+    </h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut
       magnam, dicta illum veniam eveniet expedita doloribus deserunt
@@ -86,7 +103,9 @@
     </p>
 
     <!-- food -->
-    <p>food</p>
+    <h2>
+      <p>food</p>
+    </h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ut
       magnam, dicta illum veniam eveniet expedita doloribus deserunt

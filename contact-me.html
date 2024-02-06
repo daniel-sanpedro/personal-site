@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -45,6 +46,10 @@
         padding: 16px;
         margin-bottom: 30px;
       }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
     </style>
   </head>
 
@@ -67,10 +72,24 @@
       <input type="text" id="email" name="email" placeholder="email" /><br />
       <!-- message -->
       <label for="message">message:</label>
-      <input type="text" id="message" name="message" placeholder="message" /><br />
+      <input
+      type="text"
+      id="message"
+      name="message"
+      placeholder="message"
+      /><br />
       <!-- submit -->
       <input type="submit" value="Submit" />
     </form>
+    <!-- button -->
+    <button onclick="myFunction()">Toggle dark mode</button>
+      <script>
+        function myFunction() {
+          var element = document.body;
+          element.classList.toggle("dark-mode");
+        }
+      </script>
+
   </body>
   <script src="javascript.js"></script>
 </html>
