@@ -54,6 +54,15 @@
   </head>
 
   <body>
+    <!-- darkmore button -->
+    <button onclick="myFunction()">Toggle dark mode</button>
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+    <!-- navbar -->
     <div class="navbar">
       <a href="contact-me.html" class="split">Contact Me</a>
       <a href="portfolio.html" class="split">Portfolio</a>
@@ -62,6 +71,7 @@
       <a href="https://facebook.com" class="fa fa-facebook"></a>
       <a href="https://twitter.com" class="fa fa-twitter"></a>
       <a href="https://linkedin.com/" class="fa fa-linkedin"></a>
+      <a href="https://github.com" class="fa fa-github"></a>
     </div>
     <form action="index.php" method="POST">
       <!-- name -->
@@ -73,23 +83,14 @@
       <!-- message -->
       <label for="message">message:</label>
       <input
-      type="text"
-      id="message"
-      name="message"
-      placeholder="message"
+        type="text"
+        id="message"
+        name="message"
+        placeholder="message"
       /><br />
       <!-- submit -->
       <input type="submit" value="Submit" />
     </form>
-    <!-- button -->
-    <button onclick="myFunction()">Toggle dark mode</button>
-      <script>
-        function myFunction() {
-          var element = document.body;
-          element.classList.toggle("dark-mode");
-        }
-      </script>
-
   </body>
   <script src="javascript.js"></script>
 </html>
