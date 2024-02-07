@@ -2,3 +2,12 @@
     background: #1D1E22;
     color: #eee;
   }
+
+  #clock {
+    font-size: 25px;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
