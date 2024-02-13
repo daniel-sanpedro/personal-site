@@ -10,49 +10,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Personal Website</title>
-    <style>
-      body {
-        margin: 1px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 50px;
-      }
-
-      .navbar {
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-
-      .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      .navbar a:hover {
-        background: #ddd;
-        color: black;
-      }
-      /* navbar split */
-      .navbar a.split {
-        float: right;
-        color: white;
-      }
-
-      .main {
-        padding: 16px;
-        margin-bottom: 30px;
-      }
-      canvas {
-        border: 1px solid #d3d3d3;
-        background-color: #f1f1f1;
-      }
-    </style>
   </head>
   <!-- game start on load -->
   <body onload="startGame()">
@@ -62,6 +19,7 @@
       <a href="portfolio.html" class="split">Portfolio</a>
       <a href="about.html" class="split">About Me</a>
       <a href="index.html" class="split">Index</a>
+      <!-- links to facebook/linkdin/twitter -->
       <a href="https://facebook.com" class="fa fa-facebook"></a>
       <a href="https://twitter.com" class="fa fa-twitter"></a>
       <a href="https://linkedin.com/" class="fa fa-linkedin"></a>
@@ -203,15 +161,15 @@
     </button>
 
     <!-- form -->
-    <form action="form-submitted.html"  method="POST">
+    <form action="form-submitted.html" method="POST">
       <!-- name -->
       <label for="name">name:</label>
       <input type="text" id="name" name="name" placeholder="name" /><br />
       <!-- emale -->
       <label for="email">email:</label>
       <input type="text" id="email" name="email" placeholder="email" /><br />
-<!-- message --> 
-<label for="message">score:</label>
+      <!-- message -->
+      <label for="message">score:</label>
       <input
         type="text"
         id="message"
