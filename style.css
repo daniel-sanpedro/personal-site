@@ -11,3 +11,30 @@
     border: 2px solid black;
     border-radius: 20px;
 }
+body {
+  
+  background: hsl(198 17% 10%);
+  color: hsl(27 98% 95%);
+}
+
+/* flex */
+.grid {
+  padding: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+
+  > div {
+    flex: 1 1 20rem;
+    padding: 2rem;
+    background: hsl(202, 30%, 32%);
+    border-radius: 2rem;
+
+    &:first-child {
+      flex-basis: 100%;
+    }
+
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
