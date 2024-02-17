@@ -10,7 +10,7 @@
 .navbar a {
   float: left;
   display: block;
-  color: #212121;
+  color: hsl(352 77% 60%);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -23,7 +23,7 @@
 /* navbar split */
 .navbar a.split {
   float: right;
-  color: #212121;
+  color: hsl(352 77% 60%);
 }
 .navbar a.split:hover {
   background: #ddd;
@@ -43,33 +43,37 @@ body {
   padding: 16px;
   margin-bottom: 30px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: hsl(352 77% 60%);
+}
 .grid {
   padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
-
+  
   > div {
     flex: 1 1 20rem;
-
+    
     padding: 2rem;
-
+    
     background: #c6c6c6;
     border-radius: 2rem;
-
+    
     &:first-child {
       flex-basis: 100%;
     }
-
+    
     *:last-child {
       margin-bottom: 0;
     }
   }
-
-  h1,
-  h2,h3,h4,h5,h6 {
-    margin-top: 0;
-
-    color: hsl(352 77% 60%);
+  
+  
   }
-}
