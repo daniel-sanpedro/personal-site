@@ -59,10 +59,8 @@ h6 {
   gap: 2.5rem;
   
   > div {
-    flex: 1 1 20rem;
-    
-    padding: 2rem;
-    
+    flex: 1 1 20rem; 
+    padding: 2rem;   
     background: #c6c6c6;
     border-radius: 2rem;
     
